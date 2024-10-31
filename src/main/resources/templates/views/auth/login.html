@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="ISO-8859-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title th:text="#{healing.house.title}"></title>
+	
+	<link rel="stylesheet" th:href="@{/cssandjs/css/bootstrap.min.css}"></link>
+	<script type="text/javascript" th:src="@{/cssandjs/js/bootstrap.bundle.min.js}"></script>
+</head>
+<body>
+	<div class="container text-center">
+		<div class="row mt-5">
+			<div class="col">
+				<img height="150px" width="150px" th:src="@{/images/logo/logo.jpg}"/>
+			</div>
+		</div>
+		
+		<div class="row mt-2">
+			<div class="col">
+				<b>Sign into your account</b>
+			</div>
+		</div>
+		<div class="row mt-2">
+			<form th:method="post" th:action="@{login}">
+				<div>
+					<label for="username">Username</label>
+					<div>
+						<input type="text" id="username" name="username" placeholder="Username">						
+					</div>
+				</div>
+				<div>
+					<label for="password">Password</label>
+					<div>
+						<input type="text" id="password" name="password" placeholder="Password">						
+					</div>
+				</div>
+				<input type="submit" value="Log In">
+			</form>
+		</div>
+	</div>
+	
+</body>
+</html>
