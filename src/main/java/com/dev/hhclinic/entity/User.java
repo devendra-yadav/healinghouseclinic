@@ -1,7 +1,5 @@
 package com.dev.hhclinic.entity;
 
-import java.util.List;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import lombok.Data;

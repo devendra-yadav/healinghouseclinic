@@ -28,6 +28,8 @@
 	</scm>
 	<properties>
 		<java.version>17</java.version>
+		<sonar.organization>devendra-yadav</sonar.organization>
+  		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -77,11 +79,7 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-mail</artifactId>
 		</dependency>
-		<!--<dependency>
-		    <groupId>com.github.ulisesbocchio</groupId>
-		    <artifactId>jasypt-spring-boot-starter</artifactId>
-		    <version>3.0.5</version>
-		</dependency>-->
+		
 
 	</dependencies>
 
@@ -99,10 +97,7 @@
 					</excludes>
 				</configuration>
 			</plugin>
-			<!--<plugin>
-		          <groupId>github.ulisesbocchio</groupId>
-		          <artifactId>jasypt-maven-plugin</artifactId>
-		    </plugin>-->
+			
 		</plugins>
 	</build>
 

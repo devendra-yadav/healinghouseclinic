@@ -8,9 +8,13 @@ import com.dev.hhclinic.service.EmailService;
 
 @RestController
 public class TestController {
-
-	@Autowired
+	
 	private EmailService emailService;
+	
+	@Autowired
+	public TestController(EmailService emailService) {
+		this.emailService=emailService;
+	}
 	
 	@GetMapping("/testmail")
 	public String sendMail() {
